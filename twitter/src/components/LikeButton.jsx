@@ -1,11 +1,17 @@
+import { useState } from "react"
+
 export function LikeMe() {
 
-    c
+    const [state, setState] = useState("Not Liked")
+
+    function changeState(state) {
+        setState((prev) => (prev == "Not Liked" ? "Liked" : "Not Liked"))
+    }
 
 
     return <div>
-        <button>
-            Not liked
+        <button onClick={changeState}>
+            {state}
         </button>
     </div>
 }
