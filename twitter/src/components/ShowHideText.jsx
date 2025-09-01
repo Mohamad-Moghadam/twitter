@@ -11,8 +11,11 @@ export function SHText() {
 
 
     return <div>
-        <button className={`${classes}`}>
+        <button>
             Let me show sth
         </button>
+        <p  className={`${classes}`}>
+            I'm supposed to be a plain txt but my feelings don't seem to matter. so click the button to ignore me!
+        </p>
     </div>
 }
