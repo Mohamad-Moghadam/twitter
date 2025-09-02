@@ -10,6 +10,9 @@ export function PassTog() {
 
 
     return <div>
-        <input type={`${passState}`} onClick={changePassState}/>
+        <input type={passState}/>
+        <button onClick={changePassState}>
+            Click me if u wanna see sth cool
+        </button>
     </div>
 }
