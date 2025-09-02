@@ -9,7 +9,7 @@ export function CounterButton() {
     }
 
     function reseClicks() {
-        resetCounter(0)
+        setClicks(0)
     }
 
 
@@ -20,5 +20,8 @@ export function CounterButton() {
         <button onClick={reseClicks}>
             Click me to reset my feelings
         </button>
+        <h1>
+            {counter}
+        </h1>
     </div>
 }
