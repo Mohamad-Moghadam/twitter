@@ -11,6 +11,10 @@ export function LManager() {
         setNewTxt("")
     }
 
+    function clearAll() {
+        setText([])
+    }
+
 
 
     return <div>
@@ -21,7 +25,10 @@ export function LManager() {
         ))}
         </ul>
         <button onClick={addTxt}>
-
+            add a note for future generations
+        </button>
+        <button onClick={clearAll}>
+            clear all your notes by clicking me
         </button>
     </div>
 }
